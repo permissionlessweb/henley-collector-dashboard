@@ -1,0 +1,5 @@
+export * from './aboutMe'
+export * from './bannerMenuLayout'
+export * from './contact'
+export * from './genesisCollection'
+export * from './home'
