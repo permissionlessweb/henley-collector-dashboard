@@ -40,6 +40,7 @@ export const Banner = () => {
   return (
     <Center>
       <div className='navbarcontent'>
+            <div className="frosted">
         <Box className='navbarlayout' mt={1} mb={1} >
           <Container>
         <div className='logo-container'>
@@ -57,6 +58,7 @@ export const Banner = () => {
           <BannerMenuLayout />
         </Center>
         <Divider />
+          </div>
       </div>
     </Center>
   )

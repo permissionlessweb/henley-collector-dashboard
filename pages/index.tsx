@@ -39,6 +39,7 @@ import {
 import { SendTokensCard } from '../components/react/send-tokens-card';
 
 import { cosmos } from 'stargazejs';
+import { Footer } from '../components/footer';
 
 const library = {
   title: 'StargazeJS',
@@ -86,7 +87,7 @@ const sendTokens = (
 };
 
 export default function Home() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  
 
   const { getSigningStargateClient, address, status, getRpcEndpoint } =
     useChain(chainName);
@@ -156,29 +157,9 @@ export default function Home() {
 
 
     <Banner/>
-
-      
-
-      <Box mb={3}>
         <Divider />
-      </Box>
-      <Stack
-        isInline={true}
-        spacing={1}
-        justifyContent="center"
-        opacity={0.5}
-        fontSize="sm"
-      >
-        <Text>Built with</Text>
-        <Link
-          href="https://cosmology.tech/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Cosmology
-        </Link>
-      </Stack>
     </Container>
+    <Footer/>
     </div>
   );
 }
