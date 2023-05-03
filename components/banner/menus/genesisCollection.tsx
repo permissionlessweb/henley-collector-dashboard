@@ -1,5 +1,6 @@
 import { Heading } from "@chakra-ui/react"
 import React from "react"
+import { GenesisMint } from "../../mint/genesis-mint"
 
 
 export const GenesisCollection = () => {
@@ -10,6 +11,9 @@ export const GenesisCollection = () => {
 
 export const GenesisCollectionContent = () => {
 return(
+    <div>
     <Heading className="about-me-title">Coming Soon</Heading>
+    <GenesisMint/>
+    </div>
 )
 }

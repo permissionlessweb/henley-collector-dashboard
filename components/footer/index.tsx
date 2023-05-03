@@ -8,20 +8,8 @@ export const Footer = () => {
         <div className="footer">
             <div className="layout">
                 <div className="footer-header">
-                    <div className="left">
-                        <div className="content">
-                            <div className="h2">
-                            Henley Beall - multimedia artist
-                            </div>
-                        </div>
-                    </div>
-                    <div className="right">
-                    <div className="content">
-                            <div className="h2">
-                            Henley Beall - multimedia artist
-                            </div>
-                        </div>
-                    </div>
+               
+                      
                 </div>
                 <div className="footer-middle"></div>
                 <div className="footer-bottom">

@@ -24,7 +24,102 @@ a {
     background: black;
   }
 }
+.svg {
+  width: 16px;
+  height: 16px;
+  fill: rgb(255, 255, 255);
+}
 
+
+/*Layout*/
+.spacing {
+  display: flex;
+  display: row;
+  gap: 4px;
+}
+
+.ticket-widget-claim-layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  gap: 18px;
+}
+
+.claim-code-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  width: 100%;
+}
+
+.admin-mint-claim-setup-heading-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.ticket-widget-claim-input {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 150px;
+  padding: 0px 20px;
+  text-transform: none;
+  outline: none;
+  opacity: 0.6;
+  height: 40px;
+  border: 1px solid rgba(127, 127, 128, 0.25);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 2px 2px;
+  transition: all 0.5s ease 0s;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.search-content-format {
+  flex: 1 1 0%;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  width: 100%;
+}
+
+
+.claim-button-text {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 10px;
+  line-height: 1em;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  flex: 1 1 0%;
+}
+
+.checkout-text {
+  color: rgb(8, 15, 31);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex: 1 1 0%;
+  gap: 10px;
+
+}
+.claim-code-button {
+  height: fit-content;
+  position: relative;
+  border: none;
+  padding: 1px;
+  background: linear-gradient(to right, rgb(165, 104, 239), rgba(165, 104, 239, 0.533));
+  border-radius: 5px;
+  width: 100%;
+}
 .header-nav-item{
   display: inline-block;
   vertical-align: middle;
@@ -89,7 +184,7 @@ a {
   letter-spacing: .40em;
   line-height: 1.1em;
   text-transform: uppercase;
-  color: rgba(241, 71, 94, 0.822));
+  color: rgba(241, 71, 94, 0.822);
 }
 .italics{
   font-family: proxima-nova;
@@ -250,4 +345,218 @@ a {
     line-height: 2.2em;
     text-transform: none;
     color: rgba(209, 213, 222, 0.7);
+}
+
+.event-app-details{
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0%;
+  gap: 12px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  display: block;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px -200px -200px;
+  background: linear-gradient(180deg, rgba(26, 25, 25, 0.75), rgba(80, 79, 79, 0.75), rgba(117, 115, 115, 0.75));
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  min-height: 400px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+
+}
+.image{
+  display: block;
+  content-visibility: blur(15px);
+}
+.ticket-widget-content-heading {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.ticket-widget-content-heading-text {
+  width: fit-content;
+  color: rgb(128, 108, 224);
+  text-align: left;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: normal;
+
+  display: inline-block;
+  background:  text;
+}
+.ticket-widget-refresh {
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.button-icon {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  width: fit-content;
+}
+
+.entries-card-bg-pic {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.ticket-image-content-img {
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  background-color: rgba(6, 13, 25, 0.5);
+  flex: 1 0 0%;
+  max-width: 450px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.desription-text{
+  color: rgb(230, 230, 255);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  display: flex;
+  line-height: normal;
+  background: transparent;
+  display: inline-block;
+  margin-top: 18px;
+  word-wrap: normal;
+}
+.icon-banner-button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.tabs-icon{
+  width: 18px;
+  height: 18px;
+  fill: rgb(159, 159, 159);
+}
+
+.pw-text {
+  width: fit-content;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+  background: transparent;
+  display: inline-block;
+  line-height: unset;
+}
+.purchase-price{
+  -webkit-box-align: center;
+  align-items: center;
+  column-gap: 4px;
+  display: flex;
+  flex: 1 1 0%;
+}
+.svgcoin {
+  width: 25px;
+  height: 25px;
+  fill: rgb(0, 0, 0);
+}
+
+.ticket-widget-price {
+  width: fit-content;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1;
+  background: transparent;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.ticket-widget-denom {
+  width: fit-content;
+  color: rgb(159, 159, 159);
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: normal;
+  background: transparent;
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.ticket-mint-purchase {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 0px;
+}
+
+.purchase-body{
+  display: flex;
+  gap: 18px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.purchase-button-content {
+  height: 40px;
+  position: relative;
+  border: none;
+  padding: 1px;
+  background: linear-gradient(to right, rgb(165, 104, 239), rgba(165, 104, 239, 0.533));
+  border-radius: 5px;
+  width: 100%;
+}
+
+.button-checkout-action {
+  position: relative;
+  z-index: 1;
+  -webkit-box-align: center;
+  align-items: center;
+  background: rgb(247, 231, 242);
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: flex;
+  height: 38px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 0px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 150ms ease-out 0s;
+  font-weight: 700;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 13px;
+  width: 100%;
 }
