@@ -1,4 +1,4 @@
-import { Center, Container, Heading, useDisclosure, Text, Wrap } from "@chakra-ui/react"
+import { Center, Container, Heading, useDisclosure, Text, Wrap, DrawerOverlay, DrawerHeader, DrawerBody, DrawerContent, Drawer, Button } from "@chakra-ui/react"
 import React from "react"
 import { BsCoin, BsEye, BsGift, BsMinecart, BsMinecartLoaded, BsStack } from "react-icons/bs"
 import { FaDollarSign, FaShoppingCart, FaTemperatureHigh } from "react-icons/fa"
@@ -10,11 +10,12 @@ import mushroom from '../../public/images/watermark-copy-2.jpg'
 
 export const GenesisMint = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
+    const [placement, setPlacement] = React.useState('right')
     return (
         <div>
 
             <div className='event-app-details'>
-              
+            <Heading className="about-me-title">Coming Soon</Heading>
                 <div className="entries-card-bg-pic">
                     <Image className="ticket-image-content-img" src={mushroom}/>
                 </div>
@@ -34,12 +35,24 @@ export const GenesisMint = () => {
                        
 
                         <div><div className="claim-code-button">
-                            <button className="button-checkout-action">
+                            <Button  onClick={onOpen} className="button-checkout-action">
                                 <div className="claim-button-text">
                                     <div className="checkout-text"><InfoIcon className="svg" />Learn More
                                     </div>
                                 </div>
-                            </button>
+                            </Button>
+                            <Drawer placement="bottom" onClose={onClose} isOpen={isOpen}>
+                            <DrawerOverlay />
+                                <DrawerContent>
+                                <DrawerHeader borderBottomWidth='1px'>Basic Drawer</DrawerHeader>
+                                    <DrawerBody>
+                                    <p>Some contents...</p>
+                                    <p>Some contents...</p>
+                                    <p>Some contents...</p>
+                                    </DrawerBody>
+                                </DrawerContent>
+                            </Drawer>
+                            
                         </div>
                         </div>
                  

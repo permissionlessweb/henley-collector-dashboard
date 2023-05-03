@@ -8,7 +8,7 @@ import henleyWindow2 from "../../../public/images/henley-window-pic-2.jpg"
 
 export const AboutMe = () => {
     return (
-        <div>about me</div>
+        <div className="about-me-info">about</div>
     )
 }
 
@@ -20,7 +20,9 @@ export const AboutMeContent = () => {
                 <div className="left-column">
                     <div className="about-me-intro">
                         <div className="content">
+                        <div className="about-me-info">
                             <Heading className="about-me-title">About Me</Heading>
+                            </div>
                             <br/>
                             <br/>
                             <Text className="italics">Hi, I'm Henley!</Text>

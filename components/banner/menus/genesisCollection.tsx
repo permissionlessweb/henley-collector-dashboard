@@ -5,14 +5,14 @@ import { GenesisMint } from "../../mint/genesis-mint"
 
 export const GenesisCollection = () => {
     return (
-        <div>collections</div>
+        <div className="about-me-info">collections</div>
     )
 }
 
 export const GenesisCollectionContent = () => {
 return(
     <div>
-    <Heading className="about-me-title">Coming Soon</Heading>
+ 
     <GenesisMint/>
     </div>
 )

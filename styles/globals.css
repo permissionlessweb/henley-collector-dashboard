@@ -184,7 +184,7 @@ a {
   letter-spacing: .40em;
   line-height: 1.1em;
   text-transform: uppercase;
-  color: rgba(241, 71, 94, 0.822);
+  color: rgba(235, 235, 235, 0.822);
 }
 .italics{
   font-family: proxima-nova;
@@ -194,7 +194,7 @@ a {
     letter-spacing: .11em;
     line-height: 1em;
     text-transform: capitalize;
-    color: rgba(19, 5, 44, 0.89);
+    color: rgba(209, 209, 209, 0.89);
 }
 .about-me-info{
   font-family: quasimoda;
@@ -205,9 +205,10 @@ a {
   line-height: 2.2em;
   text-transform: none;
   color: rgb(223, 223, 223);
-  background-color: rgba(3, 14, 112, 0.096);
-  backdrop-filter: blur(14px);
+  background-color: rgb(8, 8, 8);
+  backdrop-filter: blur(4px);
   border-radius: 5px;
+  padding: 5px;
 
 }
 .right-colum  {
