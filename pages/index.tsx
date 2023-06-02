@@ -25,9 +25,7 @@ import {
   chainassets,
   chainName,
   coin,
-  dependencies,
-  products,
-} from '../config';
+} from '../config/defaults';
 import {Banner } from '../components/banner'
 import { WalletStatus } from '@cosmos-kit/core';
 import {
